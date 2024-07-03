@@ -17,11 +17,11 @@ const UserForm: React.FC = () => {
 
   return (
     <Container>
-      <Typography variant="h4">User Details</Typography>
-      <TextField label="Name" value={name} onChange={(e) => setName(e.target.value)} fullWidth />
-      <TextField label="Phone Number" value={phone} onChange={(e) => setPhone(e.target.value)} fullWidth />
-      <TextField label="Email" value={email} onChange={(e) => setEmail(e.target.value)} fullWidth />
-      <Button onClick={handleSubmit}>Submit</Button>
+      <Typography variant="h4" textAlign={"center"} my={10}>User Details</Typography>
+      <TextField label="Name" value={name}  onChange={(e) => setName(e.target.value)} fullWidth />
+      <TextField sx={{my:5}} label="Phone Number" value={phone} onChange={(e) => setPhone(e.target.value)} fullWidth />
+      <TextField  label="Email" value={email} onChange={(e) => setEmail(e.target.value)} fullWidth />
+      <Button sx={{my:5}} variant='contained' onClick={handleSubmit}>Submit</Button>
     </Container>
   );
 };
